@@ -23,7 +23,7 @@ class ZeroMemory
             Match match = regex.Match(contents);
             if (match.Success)
             {
-                Console.WriteLine("Token Found :"+match.Value);
+                Console.WriteLine("Token Found in :" + Path.GetFileName(file) + "\n" + match.Value);
             }
 
         }
