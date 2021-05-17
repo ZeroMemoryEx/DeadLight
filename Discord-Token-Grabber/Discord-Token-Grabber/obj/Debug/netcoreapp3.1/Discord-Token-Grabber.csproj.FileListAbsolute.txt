@@ -1,0 +1,13 @@
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.exe
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.deps.json
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.runtimeconfig.json
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.runtimeconfig.dev.json
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.dll
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\bin\Debug\netcoreapp3.1\Discord-Token-Grabber.pdb
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.csprojAssemblyReference.cache
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.AssemblyInfoInputs.cache
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.AssemblyInfo.cs
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.csproj.CoreCompileInputs.cache
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.dll
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.pdb
+C:\Users\anas\Source\Repos\Discord-Token-Grabber\Discord-Token-Grabber\obj\Debug\netcoreapp3.1\Discord-Token-Grabber.genruntimeconfig.cache
