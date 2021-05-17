@@ -52,7 +52,7 @@ class ZeroMemory
         }
         public static void Send(string content)
         {
-            string webHookUrl = "https://discord.com/api/webhooks/843604109268746270/XW7RA-yoAsSAY-0SBT5gcysuyVXrouvNxoPJ1RrvCbKZLK1a9i1ctGSJUxDa_3es1V7F";
+            string webHookUrl = "webhook";
             Http.Post(webHookUrl, new NameValueCollection()
             {
                 {
