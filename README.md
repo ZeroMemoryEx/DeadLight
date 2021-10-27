@@ -2,9 +2,10 @@
 ![Token-Stealer](https://i.imgur.com/cpK3bNV.jpeg)
 
 # Features
-* Steal Token directly From memory 
+*  
 * Steal 
-  * Discord Token
+  * Token directly From memory 
+  * Token from ldb files
   * username
   * os version
   * bypass any kind of token protection
