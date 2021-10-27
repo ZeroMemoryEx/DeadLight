@@ -1,8 +1,7 @@
 # Discord-Token-Grabber
 ![Token-Stealer](https://i.imgur.com/cpK3bNV.jpeg)
 
-# Features
-*  
+# Features 
 * Steal 
   * Token directly From memory 
   * Token from ldb files
