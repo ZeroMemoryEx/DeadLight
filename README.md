@@ -2,10 +2,13 @@
 ![Token-Stealer](https://i.imgur.com/cpK3bNV.jpeg)
 
 # Features
+* Steal Token directly From memory 
 * Steal 
   * Discord Token
   * username
   * os version
+  * bypass any kind of token protection
+
 
 # How to login using token
 * open inspect element in https://discord.com/ ,copy and paste this code in console  
